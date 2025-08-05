@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .master {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      width: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .red {
+      grid-area: 1 / 1 / 1 / 1;
+      background-color: #E72F24;
+      margin: 0px;
+    }
+
+    .white-big {
+      grid-area: 1 / 2 / 1 / 5;
+      background-color: #F0F1EC;
+      margin: 0px;
+    } 
+
+    .white-small {
+      grid-area: 2 / 1 / 4 / 1;
+      background-color: #F0F1EC;
+      margin: 0px;
+    }
+
+    .white-medium {
+      grid-area: 2 / 2 / 4 / 4;
+      background-color: #F0F1EC;
+      margin: 0px;
+    } 
+
+    .blue {
+      grid-area: 2 / 4 / 3 / 5;
+      background-color: #004592;
+      margin: 0px 0px 10px 0px;
+    }
+
+    .xs-white {
+      grid-area: 4 / 1 / 5 / 2;
+      background-color: #F0F1EC;
+      margin: 0px;
+    }
+
+    .yellow {
+      grid-area: 4 / 2 / 5 / 3;
+      background-color: #F9D01E;
+      margin: 0px;
+    }
+
+    .black {
+      grid-area: 4 / 3 / 5 / 4;
+      background-color: #232629;
+      margin: 0px;
+    }
+
+    .white-vertical {
+      background-color: #F0F1EC;
+      grid-area: 3 / 4 / 5 / 5;
+      margin: 0px;
+    }
+
+
+
+    
+
+  </style>
+</head>
+
+<body>
+  <div class="master">
+    <div class="container">
+      <p class="red"></p>
+      <p class="white-big"></p>
+      <p class="white-small"></p>
+      <p class="xs-white"></p>
+      <p class="white-medium"></p>
+      <p class="blue"></p>
+      <p class="white-vertical"></p>
+      <p class="yellow"></p>
+      <p class="black"></p>
+    </div>
+  </div>  <!-- Write your HTML here -->
+</body>
+
+</html>
